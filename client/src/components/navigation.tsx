@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useLanguage } from '../hooks/use-language';
+import ErsaLogo from '../Ersa-logo.svg';
 
 export function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -60,7 +61,11 @@ export function Navigation() {
             {/* Logo */}
             <div className="flex items-center">
               <div className="flex-shrink-0 flex items-center">
-                <i className="fas fa-bolt text-ersa-blue text-2xl mr-2"></i>
+                <img 
+                  src={ErsaLogo} 
+                  alt="ERSA Logo" 
+                  className="h-8 w-auto mr-2"
+                />
                 <span className="text-xl font-bold text-ersa-blue">ERSA</span>
               </div>
             </div>

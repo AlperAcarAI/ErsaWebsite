@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import ErsaLogo from '../Ersa-logo.svg';
 
 export function LoadingScreen() {
   const [progress, setProgress] = useState(0);
@@ -28,9 +29,12 @@ export function LoadingScreen() {
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-gradient-to-br from-ersa-blue via-ersa-light-blue to-ersa-blue transition-opacity duration-500">
       <div className="text-center text-white">
         <div className="mb-4">
-          <i className="fas fa-bolt text-6xl animate-pulse"></i>
+          <img 
+            src={ErsaLogo} 
+            alt="ERSA Logo" 
+            className="h-16 w-auto mx-auto animate-pulse"
+          />
         </div>
-        <h2 className="text-2xl font-bold mb-2">ERSA</h2>
         <div className="w-48 h-2 bg-white/20 rounded-full mx-auto overflow-hidden">
           <div 
             className="h-full bg-white rounded-full transition-all duration-300"

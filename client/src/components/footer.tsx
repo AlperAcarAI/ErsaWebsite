@@ -1,4 +1,5 @@
 import { useLanguage } from '../hooks/use-language';
+import ErsaLogo from '../Ersa-logo.svg';
 
 export function Footer() {
   const { t } = useLanguage();
@@ -24,7 +25,11 @@ export function Footer() {
           {/* Company Info */}
           <div className="md:col-span-2">
             <div className="flex items-center mb-4">
-              <i className="fas fa-bolt text-ersa-blue text-2xl mr-3"></i>
+              <img 
+                src={ErsaLogo} 
+                alt="ERSA Logo" 
+                className="h-8 w-auto mr-3"
+              />
               <span className="text-xl font-bold">ERSA</span>
             </div>
             <p className="text-gray-300 mb-6 max-w-md">

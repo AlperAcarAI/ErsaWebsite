@@ -1,4 +1,5 @@
 import { useLanguage } from '../hooks/use-language';
+import ErsaLogo from '../Ersa-logo.svg';
 
 export function HeroSection() {
   const { t } = useLanguage();
@@ -32,7 +33,11 @@ export function HeroSection() {
       <div className="relative z-10 text-center text-white max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="animate-fade-in">
           <div className="mb-8">
-            <i className="fas fa-bolt text-8xl mb-4 animate-float"></i>
+            <img 
+              src={ErsaLogo} 
+              alt="ERSA Logo" 
+              className="h-24 w-auto mx-auto animate-float"
+            />
           </div>
           <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
             <span className="block">{t('heroTitle')}</span>
