@@ -7,7 +7,7 @@ export function ServicesSection() {
     {
       title: t('electricalWorks'),
       icon: 'fas fa-bolt',
-      image: 'https://images.unsplash.com/photo-1621905252507-b35492cc74b4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400',
+      image: 'https://images.unsplash.com/photo-1581094271901-8022df4466f9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400',
       items: [
         t('mvLvNetworks'),
         t('transformerInstallation'),
@@ -18,7 +18,7 @@ export function ServicesSection() {
     {
       title: t('infrastructureWorks'),
       icon: 'fas fa-hard-hat',
-      image: 'https://images.unsplash.com/photo-1587385789097-0197a7fbd179?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400',
+      image: 'https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400',
       items: [
         t('fiberOpticInfrastructure'),
         t('excavationWorks'),
@@ -29,7 +29,7 @@ export function ServicesSection() {
     {
       title: t('constructionContracting'),
       icon: 'fas fa-building',
-      image: 'https://images.unsplash.com/photo-1503387762-592deb58ef4e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400',
+      image: 'https://images.unsplash.com/photo-1581092921461-eab62e97a780?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400',
       items: [
         t('industrialFacilities'),
         t('stadiumsSportsHalls'),
@@ -40,7 +40,7 @@ export function ServicesSection() {
     {
       title: t('energyTransmissionLines'),
       icon: 'fas fa-cogs',
-      image: 'https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400',
+      image: 'https://images.unsplash.com/photo-1621905252472-e8592afb5111?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400',
       items: [
         t('kvLines'),
         t('overheadUnderground'),
@@ -51,7 +51,7 @@ export function ServicesSection() {
     {
       title: t('mechanicalWorks'),
       icon: 'fas fa-tools',
-      image: 'https://images.unsplash.com/photo-1581094271901-8022df4466f9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400',
+      image: 'https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400',
       items: [
         t('factoryInstallations'),
         t('structuredCabling'),
@@ -62,7 +62,7 @@ export function ServicesSection() {
     {
       title: t('urbanProjects'),
       icon: 'fas fa-city',
-      image: 'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400',
+      image: 'https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400',
       items: [
         t('parksGardens'),
         t('urbanSquares'),
