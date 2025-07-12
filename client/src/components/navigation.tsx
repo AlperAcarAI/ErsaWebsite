@@ -61,7 +61,7 @@ export function Navigation() {
             <div className="flex items-center">
               <div className="flex-shrink-0 flex items-center">
                 <i className="fas fa-bolt text-ersa-blue text-2xl mr-2"></i>
-                <span className="text-xl font-bold text-ersa-blue">ERSA ULAŞIM</span>
+                <span className="text-xl font-bold text-ersa-blue">ERSA</span>
               </div>
             </div>
 

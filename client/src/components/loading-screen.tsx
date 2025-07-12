@@ -30,7 +30,7 @@ export function LoadingScreen() {
         <div className="mb-4">
           <i className="fas fa-bolt text-6xl animate-pulse"></i>
         </div>
-        <h2 className="text-2xl font-bold mb-2">ERSA ULAŞIM</h2>
+        <h2 className="text-2xl font-bold mb-2">ERSA</h2>
         <div className="w-48 h-2 bg-white/20 rounded-full mx-auto overflow-hidden">
           <div 
             className="h-full bg-white rounded-full transition-all duration-300"

@@ -25,7 +25,7 @@ export function Footer() {
           <div className="md:col-span-2">
             <div className="flex items-center mb-4">
               <i className="fas fa-bolt text-ersa-blue text-2xl mr-3"></i>
-              <span className="text-xl font-bold">ERSA ULAŞIM</span>
+              <span className="text-xl font-bold">ERSA</span>
             </div>
             <p className="text-gray-300 mb-6 max-w-md">
               {t('heroDescription')}

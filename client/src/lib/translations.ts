@@ -8,7 +8,7 @@ export const translations = {
     contact: "İletişim",
     
     // Hero Section
-    heroTitle: "ERSA ULAŞIM",
+    heroTitle: "ERSA",
     heroSubtitle: "Güvenli Ulaşım, Güçlü Altyapı",
     heroDescription: "Ulaşım, inşaat ve elektrik sektörlerinde kalite, güven ve sürdürülebilirlik ilkeleri doğrultusunda hizmet veriyoruz.",
     ourServices: "Hizmetlerimiz",
@@ -73,7 +73,7 @@ export const translations = {
     
     // Footer
     quickLinks: "Hızlı Bağlantılar",
-    copyright: "© 2024 Ersa Ulaşım. Tüm hakları saklıdır.",
+    copyright: "© 2024 ERSA. Tüm hakları saklıdır.",
     
     // Service Details
     mvLvNetworks: "OG/AG Ağları, Güç Dağıtım Sistemleri",
@@ -110,7 +110,7 @@ export const translations = {
     contact: "Contact",
     
     // Hero Section
-    heroTitle: "ERSA TRANSPORT",
+    heroTitle: "ERSA",
     heroSubtitle: "Safe Transportation, Strong Infrastructure",
     heroDescription: "We serve in transportation, construction and electrical sectors with principles of quality, trust and sustainability.",
     ourServices: "Our Services",
@@ -175,7 +175,7 @@ export const translations = {
     
     // Footer
     quickLinks: "Quick Links",
-    copyright: "© 2024 Ersa Ulaşım. All rights reserved.",
+    copyright: "© 2024 ERSA. All rights reserved.",
     
     // Service Details
     mvLvNetworks: "MV/LV Networks, Power Distribution Systems",
@@ -212,7 +212,7 @@ export const translations = {
     contact: "التواصل",
     
     // Hero Section
-    heroTitle: "إرسا للنقل",
+    heroTitle: "إرسا",
     heroSubtitle: "نقل آمن، بنية تحتية قوية",
     heroDescription: "نحن نخدم في قطاعات النقل والبناء والكهرباء وفقاً لمبادئ الجودة والثقة والاستدامة.",
     ourServices: "خدماتنا",
@@ -277,7 +277,7 @@ export const translations = {
     
     // Footer
     quickLinks: "روابط سريعة",
-    copyright: "© 2024 Ersa Ulaşım. جميع الحقوق محفوظة.",
+    copyright: "© 2024 إرسا. جميع الحقوق محفوظة.",
     
     // Service Details
     mvLvNetworks: "شبكات الجهد المتوسط والمنخفض، أنظمة توزيع الطاقة",
