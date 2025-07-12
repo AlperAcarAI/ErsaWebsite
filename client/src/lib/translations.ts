@@ -75,31 +75,49 @@ export const translations = {
     quickLinks: "Hızlı Bağlantılar",
     copyright: "© 2024 ERSA. Tüm hakları saklıdır.",
     
-    // Service Details
+    // Service Details - Electrical Works
     mvLvNetworks: "OG/AG Ağları, Güç Dağıtım Sistemleri",
-    transformerInstallation: "Trafo Merkezi Kurulumu",
+    transformerInstallation: "Trafo Merkezi ve Kompanzasyon Sistemleri Kurulumu",
+    electricalEquipment: "Elektrik Sistemleri Ekipmanlarının Temini ve Montajı",
     lightingSystems: "Aydınlatma Sistemleri",
+    structuredCabling: "Yapısal Kablolama ve Fiber Altyapı Ağları",
+    groundingLightning: "Topraklama ve Yıldırımdan Koruma Sistemleri",
+    securitySystems: "Güvenlik Sistemleri",
+    specialLightProjection: "Özel Işık Projeksiyon Sistemleri",
     lowCurrentSystems: "Zayıf Akım Sistemleri",
+    internalInstallations: "İç Tesisat",
+    
+    // Service Details - Infrastructure Works
     fiberOpticInfrastructure: "Fiber Optik Altyapı",
     excavationWorks: "Kazı ve Dolgu İşleri",
     boredPiles: "Fore Kazık",
     earthworks: "Hafriyat",
+    transmissionLines: "İsale Hatları",
+    wastewaterDrainage: "Atık Su ve Drenaj Sistemleri",
+    
+    // Service Details - Construction Works
+    strengthening: "Güçlendirme",
+    outdoorLighting: "Çevre Aydınlatma",
+    publicBuildings: "Kamu Binaları",
+    parksGardens: "Park Bahçe ve Yaşam Alanları",
+    lightSteelStructures: "Hafif Çelik Yapı ve Depo İnşaatları",
+    restoration: "Restorasyon",
+    
+    // Service Details - Energy Transmission Lines
+    kvLines: "477 - 154 - 380 KV Enerji Nakil Hatları",
+    overheadUnderground: "ENH ve Yeraltı Tesis Yapımı",
+    
+    // Service Details - Activity Areas
+    energyTransmissionLinesArea: "Enerji Nakil Hatları",
+    enhUndergroundConstruction: "ENH ve Yeraltı Tesis Yapımı",
+    lightingInstallations: "Aydınlatma Tesisleri",
     industrialFacilities: "Endüstriyel Tesisler",
     stadiumsSportsHalls: "Stadyum ve Spor Salonları",
     highways: "Otoyollar",
     highSpeedRail: "Hızlı Tren Hatları",
-    kvLines: "477 - 154 - 380 KV Hatları",
-    overheadUnderground: "ENH ve Yeraltı Tesis Yapımı",
-    securitySystems: "Güvenlik Sistemleri",
-    specialLightProjection: "Özel Işık Projeksiyon",
-    factoryInstallations: "Fabrika İç Tesisatı",
-    structuredCabling: "Yapısal Kablolama",
-    groundingSystems: "Topraklama Sistemleri",
-    lightningProtection: "Yıldırımdan Koruma",
-    parksGardens: "Park ve Bahçeler",
-    urbanSquares: "Meydan Düzenlemeleri",
-    lightingInstallations: "Aydınlatma Tesisleri",
-    smartCitySystems: "Akıllı Şehir Sistemleri",
+    mechanical: "Mekanik",
+    infrastructure: "Altyapı",
+    factoryInstallations: "Fabrika İç Tesisatı ve Zayıf Akım Sistemleri",
   },
   en: {
     // Navigation
@@ -177,31 +195,49 @@ export const translations = {
     quickLinks: "Quick Links",
     copyright: "© 2024 ERSA. All rights reserved.",
     
-    // Service Details
-    mvLvNetworks: "MV/LV Networks, Power Distribution Systems",
-    transformerInstallation: "Transformer Station Installation",
+    // Service Details - Electrical Works
+    mvLvNetworks: "MV/LV Networks and Power Distribution Systems",
+    transformerInstallation: "Installation of Transformer Stations and Compensation Systems",
+    electricalEquipment: "Supply and Installation of Electrical System Equipment",
     lightingSystems: "Lighting Systems",
+    structuredCabling: "Structured Cabling and Fiber Infrastructure Networks",
+    groundingLightning: "Grounding and Lightning Protection Systems",
+    securitySystems: "Security Systems",
+    specialLightProjection: "Special Light Projection Systems",
     lowCurrentSystems: "Low Current Systems",
+    internalInstallations: "Internal Wiring / Indoor Electrical Installations",
+    
+    // Service Details - Infrastructure Works
     fiberOpticInfrastructure: "Fiber Optic Infrastructure",
     excavationWorks: "Excavation and Backfill Works",
-    boredPiles: "Bored Piles",
+    boredPiles: "Bored Piles (Cast-in-place Piles)",
     earthworks: "Earthworks",
+    transmissionLines: "Transmission Lines",
+    wastewaterDrainage: "Wastewater and Drainage Systems",
+    
+    // Service Details - Construction Works
+    strengthening: "Strengthening",
+    outdoorLighting: "Outdoor Lighting",
+    publicBuildings: "Public Buildings",
+    parksGardens: "Parks, Gardens, and Recreational Areas",
+    lightSteelStructures: "Light Steel Structures and Warehouse Constructions",
+    restoration: "Restoration",
+    
+    // Service Details - Energy Transmission Lines
+    kvLines: "477 - 154 - 380 kV Energy Transmission Lines",
+    overheadUnderground: "Construction of Overhead and Underground Power Facilities",
+    
+    // Service Details - Activity Areas
+    energyTransmissionLinesArea: "Energy Transmission Lines",
+    enhUndergroundConstruction: "Construction of Overhead and Underground Power Facilities",
+    lightingInstallations: "Lighting Installations",
     industrialFacilities: "Industrial Facilities",
     stadiumsSportsHalls: "Stadiums and Sports Halls",
     highways: "Highways",
     highSpeedRail: "High-Speed Rail Lines",
-    kvLines: "477 - 154 - 380 kV Lines",
-    overheadUnderground: "Overhead and Underground Facility Construction",
-    securitySystems: "Security Systems",
-    specialLightProjection: "Special Light Projection",
-    factoryInstallations: "Factory Internal Installations",
-    structuredCabling: "Structured Cabling",
-    groundingSystems: "Grounding Systems",
-    lightningProtection: "Lightning Protection",
-    parksGardens: "Parks and Gardens",
-    urbanSquares: "Urban Square Arrangements",
-    lightingInstallations: "Lighting Installations",
-    smartCitySystems: "Smart City Systems",
+    mechanical: "Mechanical Works",
+    infrastructure: "Infrastructure",
+    factoryInstallations: "Factory Internal Wiring and Low-Current Systems",
   },
   ar: {
     // Navigation
@@ -279,31 +315,49 @@ export const translations = {
     quickLinks: "روابط سريعة",
     copyright: "© 2024 إرسا. جميع الحقوق محفوظة.",
     
-    // Service Details
-    mvLvNetworks: "شبكات الجهد المتوسط والمنخفض، أنظمة توزيع الطاقة",
-    transformerInstallation: "تركيب محطات المحولات",
+    // Service Details - Electrical Works
+    mvLvNetworks: "شبكات الجهد المتوسط والمنخفض وأنظمة توزيع الطاقة",
+    transformerInstallation: "تركيب محطات المحولات وأنظمة التعويض",
+    electricalEquipment: "توريد وتركيب معدات أنظمة الكهرباء",
     lightingSystems: "أنظمة الإضاءة",
+    structuredCabling: "الكابلات الهيكلية وشبكات البنية التحتية بالألياف الضوئية",
+    groundingLightning: "أنظمة التأريض والحماية من الصواعق",
+    securitySystems: "أنظمة الأمن والحماية",
+    specialLightProjection: "أنظمة الإسقاط الضوئي الخاصة",
     lowCurrentSystems: "أنظمة التيار الضعيف",
+    internalInstallations: "التمديدات الكهربائية الداخلية",
+    
+    // Service Details - Infrastructure Works
     fiberOpticInfrastructure: "بنية تحتية لألياف الضوئية",
     excavationWorks: "أعمال الحفر والردم",
-    boredPiles: "الخوازيق المحفورة",
-    earthworks: "أعمال الحفر",
+    boredPiles: "الركائز الحفرية (أو الركائز المصبوبة في المكان)",
+    earthworks: "أعمال تجريف الأرض",
+    transmissionLines: "خطوط النقل",
+    wastewaterDrainage: "أنظمة مياه الصرف الصحي والصرف",
+    
+    // Service Details - Construction Works
+    strengthening: "التعزيز الهيكلي",
+    outdoorLighting: "إضاءة المحيط الخارجي",
+    publicBuildings: "المباني العامة",
+    parksGardens: "الحدائق والمتنزهات ومساحات الترفيه",
+    lightSteelStructures: "هياكل فولاذية خفيفة وبناء المخازن",
+    restoration: "الترميم",
+    
+    // Service Details - Energy Transmission Lines
+    kvLines: "خطوط نقل الطاقة بجهد 477 - 154 - 380 ك.ف",
+    overheadUnderground: "إنشاء منشآت الطاقة الهوائية وتحت الأرض",
+    
+    // Service Details - Activity Areas
+    energyTransmissionLinesArea: "خطوط نقل الطاقة",
+    enhUndergroundConstruction: "إنشاء منشآت الطاقة الهوائية وتحت الأرض",
+    lightingInstallations: "منشآت الإضاءة",
     industrialFacilities: "المنشآت الصناعية",
     stadiumsSportsHalls: "الملاعب والقاعات الرياضية",
     highways: "الطرق السريعة",
     highSpeedRail: "خطوط القطارات السريعة",
-    kvLines: "خطوط 477 - 154 - 380 ك.ف",
-    overheadUnderground: "إنشاء منشآت هوائية وتحت أرضية",
-    securitySystems: "أنظمة الأمان",
-    specialLightProjection: "الإسقاط الضوئي الخاص",
-    factoryInstallations: "التمديدات الداخلية للمصانع",
-    structuredCabling: "الكابلات الهيكلية",
-    groundingSystems: "أنظمة التأريض",
-    lightningProtection: "الحماية من الصواعق",
-    parksGardens: "الحدائق والمتنزهات",
-    urbanSquares: "تنظيم الساحات العامة",
-    lightingInstallations: "منشآت الإضاءة",
-    smartCitySystems: "أنظمة المدن الذكية",
+    mechanical: "الأعمال الميكانيكية",
+    infrastructure: "البنية التحتية",
+    factoryInstallations: "تمديدات داخلية للمصانع وأنظمة التيار الضعيف",
   }
 };
 

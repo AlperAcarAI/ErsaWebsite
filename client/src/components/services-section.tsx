@@ -11,8 +11,14 @@ export function ServicesSection() {
       items: [
         t('mvLvNetworks'),
         t('transformerInstallation'),
+        t('electricalEquipment'),
         t('lightingSystems'),
-        t('lowCurrentSystems')
+        t('structuredCabling'),
+        t('groundingLightning'),
+        t('securitySystems'),
+        t('specialLightProjection'),
+        t('lowCurrentSystems'),
+        t('internalInstallations')
       ]
     },
     {
@@ -23,7 +29,9 @@ export function ServicesSection() {
         t('fiberOpticInfrastructure'),
         t('excavationWorks'),
         t('boredPiles'),
-        t('earthworks')
+        t('earthworks'),
+        t('transmissionLines'),
+        t('wastewaterDrainage')
       ]
     },
     {
@@ -31,10 +39,12 @@ export function ServicesSection() {
       icon: 'fas fa-building',
       image: 'https://images.unsplash.com/photo-1581092921461-eab62e97a780?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400',
       items: [
-        t('industrialFacilities'),
-        t('stadiumsSportsHalls'),
-        t('highways'),
-        t('highSpeedRail')
+        t('strengthening'),
+        t('outdoorLighting'),
+        t('publicBuildings'),
+        t('parksGardens'),
+        t('lightSteelStructures'),
+        t('restoration')
       ]
     },
     {
@@ -43,9 +53,7 @@ export function ServicesSection() {
       image: 'https://images.unsplash.com/photo-1621905252472-e8592afb5111?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400',
       items: [
         t('kvLines'),
-        t('overheadUnderground'),
-        t('securitySystems'),
-        t('specialLightProjection')
+        t('overheadUnderground')
       ]
     },
     {
@@ -54,9 +62,7 @@ export function ServicesSection() {
       image: 'https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400',
       items: [
         t('factoryInstallations'),
-        t('structuredCabling'),
-        t('groundingSystems'),
-        t('lightningProtection')
+        t('mechanical')
       ]
     },
     {
@@ -64,10 +70,13 @@ export function ServicesSection() {
       icon: 'fas fa-city',
       image: 'https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400',
       items: [
-        t('parksGardens'),
-        t('urbanSquares'),
+        t('energyTransmissionLinesArea'),
+        t('enhUndergroundConstruction'),
         t('lightingInstallations'),
-        t('smartCitySystems')
+        t('industrialFacilities'),
+        t('stadiumsSportsHalls'),
+        t('highways'),
+        t('highSpeedRail')
       ]
     }
   ];
