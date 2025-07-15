@@ -41,8 +41,8 @@ export function ValuesSection() {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img 
-          src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1920&h=1080" 
-          alt="Electrical power lines and infrastructure" 
+          src="/images/values-background.png" 
+          alt="ERSA elektrik altyapısı ve değerler" 
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-ersa-blue/90 via-ersa-blue/80 to-ersa-light-blue/90"></div>

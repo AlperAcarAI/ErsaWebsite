@@ -7,7 +7,7 @@ export function ServicesSection() {
     {
       title: t('electricalWorks'),
       icon: 'fas fa-bolt',
-      image: 'https://images.unsplash.com/photo-1581094271901-8022df4466f9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400',
+      image: '/images/electrical-work-1.png',
       items: [
         t('mvLvNetworks'),
         t('transformerInstallation'),
@@ -24,7 +24,7 @@ export function ServicesSection() {
     {
       title: t('infrastructureWorks'),
       icon: 'fas fa-hard-hat',
-      image: 'https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400',
+      image: '/images/infrastructure-work.png',
       items: [
         t('fiberOpticInfrastructure'),
         t('excavationWorks'),
@@ -37,7 +37,7 @@ export function ServicesSection() {
     {
       title: t('constructionContracting'),
       icon: 'fas fa-building',
-      image: 'https://images.unsplash.com/photo-1581092921461-eab62e97a780?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400',
+      image: '/images/construction-work.png',
       items: [
         t('strengthening'),
         t('outdoorLighting'),
@@ -50,7 +50,7 @@ export function ServicesSection() {
     {
       title: t('energyTransmissionLines'),
       icon: 'fas fa-cogs',
-      image: 'https://images.unsplash.com/photo-1621905252472-e8592afb5111?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400',
+      image: '/images/electrical-work-2.png',
       items: [
         t('kvLines'),
         t('overheadUnderground')
@@ -59,7 +59,7 @@ export function ServicesSection() {
     {
       title: t('mechanicalWorks'),
       icon: 'fas fa-tools',
-      image: 'https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400',
+      image: '/images/electrical-work-3.png',
       items: [
         t('factoryInstallations'),
         t('mechanical')
@@ -68,7 +68,7 @@ export function ServicesSection() {
     {
       title: t('urbanProjects'),
       icon: 'fas fa-city',
-      image: 'https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400',
+      image: '/images/urban-projects.png',
       items: [
         t('energyTransmissionLinesArea'),
         t('enhUndergroundConstruction'),
