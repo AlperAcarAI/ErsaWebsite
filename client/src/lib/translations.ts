@@ -6,6 +6,7 @@ export const translations = {
     services: "Hizmetler",
     values: "Değerler",
     contact: "İletişim",
+    digitalCatalog: "Dijital Katalog",
     
     // Hero Section
     heroTitle: "ERSA",
@@ -126,6 +127,7 @@ export const translations = {
     services: "Services",
     values: "Values",
     contact: "Contact",
+    digitalCatalog: "Digital Catalog",
     
     // Hero Section
     heroTitle: "ERSA",
@@ -246,6 +248,7 @@ export const translations = {
     services: "الخدمات",
     values: "القيم",
     contact: "التواصل",
+    digitalCatalog: "الكتالوج الرقمي",
     
     // Hero Section
     heroTitle: "إرسا",

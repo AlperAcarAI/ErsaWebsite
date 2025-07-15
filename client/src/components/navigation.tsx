@@ -102,6 +102,15 @@ export function Navigation() {
               >
                 {t('contact')}
               </button>
+              <a 
+                href="/ErsaUlasim-Katalog.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="nav-item text-white bg-ersa-blue hover:bg-ersa-light-blue px-4 py-2 text-sm font-medium transition-colors rounded-lg inline-flex items-center space-x-2"
+              >
+                <i className="fas fa-book text-sm"></i>
+                <span>{t('digitalCatalog')}</span>
+              </a>
             </div>
 
             {/* Language Switcher */}
@@ -187,6 +196,15 @@ export function Navigation() {
             >
               {t('contact')}
             </button>
+            <a 
+              href="/ErsaUlasim-Katalog.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block w-full text-left px-3 py-2 text-base font-medium text-white bg-ersa-blue hover:bg-ersa-light-blue rounded-md inline-flex items-center space-x-2"
+            >
+              <i className="fas fa-book text-sm"></i>
+              <span>{t('digitalCatalog')}</span>
+            </a>
           </div>
         </div>
       </nav>
