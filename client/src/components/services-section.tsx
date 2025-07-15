@@ -24,7 +24,7 @@ export function ServicesSection() {
     {
       title: t('infrastructureWorks'),
       icon: 'fas fa-hard-hat',
-      image: '/images/infrastructure-work.png',
+      image: '/images/infrastructure-systems.png',
       items: [
         t('fiberOpticInfrastructure'),
         t('excavationWorks'),
@@ -37,7 +37,7 @@ export function ServicesSection() {
     {
       title: t('constructionContracting'),
       icon: 'fas fa-building',
-      image: '/images/construction-work.png',
+      image: '/images/construction-project.png',
       items: [
         t('strengthening'),
         t('outdoorLighting'),
@@ -59,7 +59,7 @@ export function ServicesSection() {
     {
       title: t('mechanicalWorks'),
       icon: 'fas fa-tools',
-      image: '/images/mechanical-work.png',
+      image: '/images/mechanical-systems.png',
       items: [
         t('factoryInstallations'),
         t('mechanical')
@@ -68,7 +68,7 @@ export function ServicesSection() {
     {
       title: t('urbanProjects'),
       icon: 'fas fa-city',
-      image: '/images/urban-lighting.png',
+      image: '/images/urban-development.png',
       items: [
         t('energyTransmissionLinesArea'),
         t('enhUndergroundConstruction'),
