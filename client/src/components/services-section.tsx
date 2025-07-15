@@ -50,7 +50,7 @@ export function ServicesSection() {
     {
       title: t('energyTransmissionLines'),
       icon: 'fas fa-cogs',
-      image: '/images/electrical-work-2.png',
+      image: '/images/transmission-lines.png',
       items: [
         t('kvLines'),
         t('overheadUnderground')
@@ -59,7 +59,7 @@ export function ServicesSection() {
     {
       title: t('mechanicalWorks'),
       icon: 'fas fa-tools',
-      image: '/images/electrical-work-3.png',
+      image: '/images/mechanical-work.png',
       items: [
         t('factoryInstallations'),
         t('mechanical')
@@ -68,7 +68,7 @@ export function ServicesSection() {
     {
       title: t('urbanProjects'),
       icon: 'fas fa-city',
-      image: '/images/urban-projects.png',
+      image: '/images/urban-lighting.png',
       items: [
         t('energyTransmissionLinesArea'),
         t('enhUndergroundConstruction'),
