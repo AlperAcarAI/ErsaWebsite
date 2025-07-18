@@ -20,7 +20,7 @@ export function Navigation() {
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
-      const headerOffset = 80;
+      const headerOffset = window.innerWidth < 768 ? 60 : 80;
       const elementPosition = element.offsetTop;
       const offsetPosition = elementPosition - headerOffset;
 
@@ -56,17 +56,17 @@ export function Navigation() {
       <nav className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 ${
         isScrolled ? 'bg-white/95 backdrop-blur-md shadow-lg' : 'bg-white/95 backdrop-blur-md'
       } border-b border-gray-200`}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-16">
+        <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
+          <div className="flex justify-between items-center h-14 sm:h-16">
             {/* Logo */}
             <div className="flex items-center">
               <div className="flex-shrink-0 flex items-center">
                 <img 
                   src={ErsaLogo} 
                   alt="ERSA Logo" 
-                  className="h-8 w-auto mr-2"
+                  className="h-6 sm:h-8 w-auto mr-2"
                 />
-                <span className="text-xl font-bold text-ersa-blue">ERSA</span>
+                <span className="text-lg sm:text-xl font-bold text-ersa-blue">ERSA</span>
               </div>
             </div>
 
@@ -118,11 +118,11 @@ export function Navigation() {
               <div className="relative">
                 <button 
                   onClick={() => setIsLanguageMenuOpen(!isLanguageMenuOpen)}
-                  className="language-switcher flex items-center space-x-2 px-3 py-2 bg-ersa-blue text-white rounded-lg hover:bg-ersa-light-blue transition-colors"
+                  className="language-switcher flex items-center space-x-1 sm:space-x-2 px-2 sm:px-3 py-1 sm:py-2 bg-ersa-blue text-white rounded-lg hover:bg-ersa-light-blue transition-colors"
                 >
-                  <i className="fas fa-globe text-sm"></i>
-                  <span className="text-sm font-medium">{languageLabels[language]}</span>
-                  <i className="fas fa-chevron-down text-xs"></i>
+                  <i className="fas fa-globe text-xs sm:text-sm"></i>
+                  <span className="text-xs sm:text-sm font-medium">{languageLabels[language]}</span>
+                  <i className="fas fa-chevron-down text-xs hidden sm:inline"></i>
                 </button>
                 <div className={`absolute right-0 mt-2 w-32 bg-white rounded-lg shadow-lg border border-gray-200 transition-all duration-200 transform ${
                   isLanguageMenuOpen ? 'opacity-100 visible translate-y-0' : 'opacity-0 invisible translate-y-2'
@@ -165,34 +165,34 @@ export function Navigation() {
         <div className={`md:hidden bg-white border-t border-gray-200 transition-all duration-300 transform ${
           isMobileMenuOpen ? 'opacity-100 visible translate-y-0' : 'opacity-0 invisible -translate-y-4'
         }`}>
-          <div className="px-2 pt-2 pb-3 space-y-1">
+          <div className="px-2 pt-1 pb-2 space-y-1">
             <button 
               onClick={() => scrollToSection('home')}
-              className="block w-full text-left px-3 py-2 text-base font-medium text-gray-700 hover:text-ersa-blue hover:bg-gray-50 rounded-md"
+              className="block w-full text-left px-3 py-1.5 text-sm font-medium text-gray-700 hover:text-ersa-blue hover:bg-gray-50 rounded-md"
             >
               {t('home')}
             </button>
             <button 
               onClick={() => scrollToSection('about')}
-              className="block w-full text-left px-3 py-2 text-base font-medium text-gray-700 hover:text-ersa-blue hover:bg-gray-50 rounded-md"
+              className="block w-full text-left px-3 py-1.5 text-sm font-medium text-gray-700 hover:text-ersa-blue hover:bg-gray-50 rounded-md"
             >
               {t('about')}
             </button>
             <button 
               onClick={() => scrollToSection('services')}
-              className="block w-full text-left px-3 py-2 text-base font-medium text-gray-700 hover:text-ersa-blue hover:bg-gray-50 rounded-md"
+              className="block w-full text-left px-3 py-1.5 text-sm font-medium text-gray-700 hover:text-ersa-blue hover:bg-gray-50 rounded-md"
             >
               {t('services')}
             </button>
             <button 
               onClick={() => scrollToSection('values')}
-              className="block w-full text-left px-3 py-2 text-base font-medium text-gray-700 hover:text-ersa-blue hover:bg-gray-50 rounded-md"
+              className="block w-full text-left px-3 py-1.5 text-sm font-medium text-gray-700 hover:text-ersa-blue hover:bg-gray-50 rounded-md"
             >
               {t('values')}
             </button>
             <button 
               onClick={() => scrollToSection('contact')}
-              className="block w-full text-left px-3 py-2 text-base font-medium text-gray-700 hover:text-ersa-blue hover:bg-gray-50 rounded-md"
+              className="block w-full text-left px-3 py-1.5 text-sm font-medium text-gray-700 hover:text-ersa-blue hover:bg-gray-50 rounded-md"
             >
               {t('contact')}
             </button>
@@ -200,7 +200,7 @@ export function Navigation() {
               href="/ErsaUlasim-Katalog.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="block w-full text-left px-3 py-2 text-base font-medium text-white bg-ersa-blue hover:bg-ersa-light-blue rounded-md inline-flex items-center space-x-2"
+              className="block w-full text-left px-3 py-1.5 text-sm font-medium text-white bg-ersa-blue hover:bg-ersa-light-blue rounded-md inline-flex items-center space-x-2"
             >
               <i className="fas fa-book text-sm"></i>
               <span>{t('digitalCatalog')}</span>
