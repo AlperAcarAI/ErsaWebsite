@@ -19,7 +19,7 @@ export function HeroSection() {
   };
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center hero-pattern">
+    <section id="home" className="relative min-h-[70vh] sm:min-h-[80vh] flex items-center justify-center hero-pattern">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img 
