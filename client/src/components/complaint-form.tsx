@@ -30,6 +30,7 @@ export function ComplaintForm() {
     setIsSubmitting(true);
 
     try {
+      // Formspree entegrasyonu - formspree.io'da hesap açıp form ID'sini buraya yazın
       const response = await fetch('https://formspree.io/f/YOUR_FORM_ID', {
         method: 'POST',
         headers: {
@@ -66,7 +67,8 @@ export function ComplaintForm() {
       }
     } catch (error) {
       console.error('Error submitting form:', error);
-      alert('Form gönderilirken bir hata oluştu. Lütfen tekrar deneyin.');
+      const errorMessage = error instanceof Error ? error.message : 'Form gönderilirken bir hata oluştu. Lütfen tekrar deneyin.';
+      alert(errorMessage);
     } finally {
       setIsSubmitting(false);
     }
