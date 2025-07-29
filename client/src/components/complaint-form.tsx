@@ -30,8 +30,8 @@ export function ComplaintForm() {
     setIsSubmitting(true);
 
     try {
-      // Formspree entegrasyonu - formspree.io'da hesap açıp form ID'sini buraya yazın
-      const response = await fetch('https://formspree.io/f/YOUR_FORM_ID', {
+      // Formspree entegrasyonu - hazır endpoint
+      const response = await fetch('https://formspree.io/f/mzzvgwwy', {
         method: 'POST',
         headers: {
           'Accept': 'application/json',
