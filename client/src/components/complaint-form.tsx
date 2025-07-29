@@ -76,26 +76,72 @@ export function ComplaintForm() {
 
   if (isSubmitted) {
     return (
-      <div className="max-w-2xl mx-auto bg-white rounded-lg shadow-lg p-8 text-center">
-        <div className="mb-6">
-          <i className="fas fa-check-circle text-6xl text-green-500 mb-4"></i>
-          <h2 className="text-2xl font-bold text-gray-900 mb-2">
-            {t('formSubmittedTitle')}
-          </h2>
-          <p className="text-gray-600">
-            {t('formSubmittedMessage')}
-          </p>
-        </div>
-        <div className="space-y-4">
-          <button
-            onClick={() => setIsSubmitted(false)}
-            className="bg-ersa-blue text-white px-6 py-3 rounded-lg hover:bg-ersa-light-blue transition-colors mr-4"
-          >
-            {t('submitAnother')}
-          </button>
-          <Link href="/" className="bg-gray-500 text-white px-6 py-3 rounded-lg hover:bg-gray-600 transition-colors">
-            Ana Sayfaya Dön
-          </Link>
+      <div className="max-w-2xl mx-auto">
+        <div className="bg-white rounded-lg shadow-xl p-8 text-center border border-green-200">
+          {/* Success Animation */}
+          <div className="mb-6">
+            <div className="relative mx-auto w-24 h-24 mb-6">
+              <div className="absolute inset-0 bg-green-100 rounded-full animate-ping"></div>
+              <div className="relative flex items-center justify-center w-24 h-24 bg-green-500 rounded-full">
+                <i className="fas fa-check text-white text-3xl"></i>
+              </div>
+            </div>
+            <h2 className="text-3xl font-bold text-gray-900 mb-3">
+              {t('formSubmittedTitle')}
+            </h2>
+            <p className="text-lg text-gray-600 mb-6">
+              {t('formSubmittedMessage')}
+            </p>
+          </div>
+
+          {/* Success Details */}
+          <div className="bg-green-50 border border-green-200 rounded-lg p-6 mb-8">
+            <div className="flex items-center justify-center mb-4">
+              <i className="fas fa-clock text-green-600 mr-2"></i>
+              <span className="text-green-800 font-medium">Tahmini Yanıt Süresi: 1-2 İş Günü</span>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm text-green-700">
+              <div className="flex items-center">
+                <i className="fas fa-envelope mr-2"></i>
+                E-posta ile bilgilendirileceksiniz
+              </div>
+              <div className="flex items-center">
+                <i className="fas fa-shield-check mr-2"></i>
+                Başvurunuz güvenle kaydedildi
+              </div>
+            </div>
+          </div>
+
+          {/* Action Buttons */}
+          <div className="space-y-4">
+            <button
+              onClick={() => setIsSubmitted(false)}
+              className="w-full bg-gradient-to-r from-ersa-blue to-ersa-light-blue text-white px-8 py-3 rounded-lg hover:from-ersa-light-blue hover:to-ersa-blue transition-all duration-300 font-medium transform hover:scale-105"
+            >
+              <i className="fas fa-plus mr-2"></i>
+              {t('submitAnother')}
+            </button>
+            
+            <Link href="/" className="block w-full bg-gray-100 text-gray-700 px-8 py-3 rounded-lg hover:bg-gray-200 transition-colors font-medium">
+              <i className="fas fa-home mr-2"></i>
+              Ana Sayfaya Dön
+            </Link>
+          </div>
+
+          {/* Contact Info */}
+          <div className="mt-8 pt-6 border-t border-gray-200">
+            <p className="text-sm text-gray-600 mb-3">Acil durumlar için:</p>
+            <div className="flex flex-col sm:flex-row justify-center items-center space-y-2 sm:space-y-0 sm:space-x-6 text-sm">
+              <a href="tel:+902122220646" className="flex items-center text-ersa-blue hover:text-ersa-light-blue">
+                <i className="fas fa-phone mr-2"></i>
+                +90 212 222 0646
+              </a>
+              <a href="mailto:info@ersaulasim.com.tr" className="flex items-center text-ersa-blue hover:text-ersa-light-blue">
+                <i className="fas fa-envelope mr-2"></i>
+                info@ersaulasim.com.tr
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     );
@@ -103,19 +149,50 @@ export function ComplaintForm() {
 
   return (
     <div className="max-w-4xl mx-auto">
-      <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-        {/* Header */}
-        <div className="bg-ersa-blue text-white p-8">
-          <h1 className="text-3xl font-bold mb-2">{t('complaintFormTitle')}</h1>
-          <p className="text-ersa-light-blue">{t('complaintFormDescription')}</p>
+      {/* Hero Section */}
+      <div className="text-center mb-8">
+        <div className="inline-flex items-center justify-center w-16 h-16 bg-ersa-blue text-white rounded-full mb-4">
+          <i className="fas fa-envelope text-2xl"></i>
+        </div>
+        <h1 className="text-4xl font-bold text-gray-900 mb-4">{t('complaintFormTitle')}</h1>
+        <p className="text-lg text-gray-600 max-w-2xl mx-auto">{t('complaintFormDescription')}</p>
+      </div>
+
+      <div className="bg-white rounded-lg shadow-xl overflow-hidden border border-gray-100">
+        {/* Progress Steps */}
+        <div className="bg-gradient-to-r from-ersa-blue to-ersa-light-blue p-6">
+          <div className="flex items-center justify-center space-x-4 text-white">
+            <div className="flex items-center">
+              <div className="w-8 h-8 bg-white text-ersa-blue rounded-full flex items-center justify-center text-sm font-bold">1</div>
+              <span className="ml-2 font-medium">Bilgilerinizi Girin</span>
+            </div>
+            <div className="w-8 h-0.5 bg-white opacity-50"></div>
+            <div className="flex items-center">
+              <div className="w-8 h-8 bg-white opacity-50 text-ersa-blue rounded-full flex items-center justify-center text-sm font-bold">2</div>
+              <span className="ml-2 font-medium opacity-75">Gönder</span>
+            </div>
+            <div className="w-8 h-0.5 bg-white opacity-30"></div>
+            <div className="flex items-center">
+              <div className="w-8 h-8 bg-white opacity-30 text-ersa-blue rounded-full flex items-center justify-center text-sm font-bold">3</div>
+              <span className="ml-2 font-medium opacity-50">Tamamlandı</span>
+            </div>
+          </div>
         </div>
 
         {/* Form */}
         <form onSubmit={handleSubmit} className="p-8">
+          <div className="mb-8">
+            <h3 className="text-xl font-semibold text-gray-900 mb-2 flex items-center">
+              <i className="fas fa-user-circle text-ersa-blue mr-3"></i>
+              Kişisel Bilgiler
+            </h3>
+            <p className="text-gray-600 text-sm mb-6">Sizinle iletişim kurabilmemiz için gerekli bilgiler</p>
+          </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
             {/* Name */}
-            <div>
-              <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
+            <div className="relative">
+              <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2 flex items-center">
+                <i className="fas fa-user text-ersa-blue mr-2"></i>
                 {t('fullName')} *
               </label>
               <input
@@ -125,13 +202,18 @@ export function ComplaintForm() {
                 value={formData.name}
                 onChange={handleInputChange}
                 required
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-ersa-blue focus:border-ersa-blue"
+                className="w-full px-4 py-3 pl-12 border border-gray-300 rounded-lg focus:ring-2 focus:ring-ersa-blue focus:border-ersa-blue transition-all duration-200 hover:border-gray-400"
+                placeholder="Ad ve soyadınızı girin"
               />
+              <div className="absolute left-4 top-11 text-gray-400">
+                <i className="fas fa-user"></i>
+              </div>
             </div>
 
             {/* Email */}
-            <div>
-              <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
+            <div className="relative">
+              <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2 flex items-center">
+                <i className="fas fa-envelope text-ersa-blue mr-2"></i>
                 {t('email')} *
               </label>
               <input
@@ -141,13 +223,18 @@ export function ComplaintForm() {
                 value={formData.email}
                 onChange={handleInputChange}
                 required
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-ersa-blue focus:border-ersa-blue"
+                className="w-full px-4 py-3 pl-12 border border-gray-300 rounded-lg focus:ring-2 focus:ring-ersa-blue focus:border-ersa-blue transition-all duration-200 hover:border-gray-400"
+                placeholder="ornek@email.com"
               />
+              <div className="absolute left-4 top-11 text-gray-400">
+                <i className="fas fa-envelope"></i>
+              </div>
             </div>
 
             {/* Phone */}
-            <div>
-              <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-2">
+            <div className="relative">
+              <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-2 flex items-center">
+                <i className="fas fa-phone text-ersa-blue mr-2"></i>
                 {t('phone')}
               </label>
               <input
@@ -156,13 +243,18 @@ export function ComplaintForm() {
                 name="phone"
                 value={formData.phone}
                 onChange={handleInputChange}
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-ersa-blue focus:border-ersa-blue"
+                className="w-full px-4 py-3 pl-12 border border-gray-300 rounded-lg focus:ring-2 focus:ring-ersa-blue focus:border-ersa-blue transition-all duration-200 hover:border-gray-400"
+                placeholder="+90 5XX XXX XX XX"
               />
+              <div className="absolute left-4 top-11 text-gray-400">
+                <i className="fas fa-phone"></i>
+              </div>
             </div>
 
             {/* Company */}
-            <div>
-              <label htmlFor="company" className="block text-sm font-medium text-gray-700 mb-2">
+            <div className="relative">
+              <label htmlFor="company" className="block text-sm font-medium text-gray-700 mb-2 flex items-center">
+                <i className="fas fa-building text-ersa-blue mr-2"></i>
                 {t('company')}
               </label>
               <input
@@ -171,13 +263,30 @@ export function ComplaintForm() {
                 name="company"
                 value={formData.company}
                 onChange={handleInputChange}
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-ersa-blue focus:border-ersa-blue"
+                className="w-full px-4 py-3 pl-12 border border-gray-300 rounded-lg focus:ring-2 focus:ring-ersa-blue focus:border-ersa-blue transition-all duration-200 hover:border-gray-400"
+                placeholder="Şirket/Kurum adı (opsiyonel)"
               />
+              <div className="absolute left-4 top-11 text-gray-400">
+                <i className="fas fa-building"></i>
+              </div>
             </div>
+          </div>
+
+          {/* Form Details Section */}
+          <div className="mb-8 pt-8 border-t border-gray-200">
+            <h3 className="text-xl font-semibold text-gray-900 mb-2 flex items-center">
+              <i className="fas fa-clipboard-list text-ersa-blue mr-3"></i>
+              Başvuru Detayları
+            </h3>
+            <p className="text-gray-600 text-sm mb-6">Başvurunuzun türü ve öncelik seviyesi</p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
 
             {/* Form Type */}
-            <div>
-              <label htmlFor="formType" className="block text-sm font-medium text-gray-700 mb-2">
+            <div className="relative">
+              <label htmlFor="formType" className="block text-sm font-medium text-gray-700 mb-2 flex items-center">
+                <i className="fas fa-list-alt text-ersa-blue mr-2"></i>
                 {t('formType')} *
               </label>
               <select
@@ -186,7 +295,7 @@ export function ComplaintForm() {
                 value={formData.formType}
                 onChange={handleInputChange}
                 required
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-ersa-blue focus:border-ersa-blue"
+                className="w-full px-4 py-3 pl-12 border border-gray-300 rounded-lg focus:ring-2 focus:ring-ersa-blue focus:border-ersa-blue transition-all duration-200 hover:border-gray-400 appearance-none bg-white"
               >
                 <option value="">{t('selectFormType')}</option>
                 <option value="complaint">{t('complaint')}</option>
@@ -194,11 +303,18 @@ export function ComplaintForm() {
                 <option value="suggestion">{t('suggestion')}</option>
                 <option value="other">{t('other')}</option>
               </select>
+              <div className="absolute left-4 top-11 text-gray-400">
+                <i className="fas fa-list-alt"></i>
+              </div>
+              <div className="absolute right-4 top-11 text-gray-400 pointer-events-none">
+                <i className="fas fa-chevron-down"></i>
+              </div>
             </div>
 
             {/* Priority */}
-            <div>
-              <label htmlFor="priority" className="block text-sm font-medium text-gray-700 mb-2">
+            <div className="relative">
+              <label htmlFor="priority" className="block text-sm font-medium text-gray-700 mb-2 flex items-center">
+                <i className="fas fa-exclamation-circle text-ersa-blue mr-2"></i>
                 {t('priority')}
               </label>
               <select
@@ -206,18 +322,34 @@ export function ComplaintForm() {
                 name="priority"
                 value={formData.priority}
                 onChange={handleInputChange}
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-ersa-blue focus:border-ersa-blue"
+                className="w-full px-4 py-3 pl-12 border border-gray-300 rounded-lg focus:ring-2 focus:ring-ersa-blue focus:border-ersa-blue transition-all duration-200 hover:border-gray-400 appearance-none bg-white"
               >
                 <option value="normal">{t('normalPriority')}</option>
                 <option value="high">{t('highPriority')}</option>
                 <option value="urgent">{t('urgentPriority')}</option>
               </select>
+              <div className="absolute left-4 top-11 text-gray-400">
+                <i className="fas fa-exclamation-circle"></i>
+              </div>
+              <div className="absolute right-4 top-11 text-gray-400 pointer-events-none">
+                <i className="fas fa-chevron-down"></i>
+              </div>
             </div>
           </div>
 
+          {/* Message Section */}
+          <div className="mb-8 pt-8 border-t border-gray-200">
+            <h3 className="text-xl font-semibold text-gray-900 mb-2 flex items-center">
+              <i className="fas fa-comment-alt text-ersa-blue mr-3"></i>
+              Mesaj Detayları
+            </h3>
+            <p className="text-gray-600 text-sm mb-6">Başvurunuzun konusu ve detayları</p>
+          </div>
+
           {/* Subject */}
-          <div className="mb-6">
-            <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-2">
+          <div className="mb-6 relative">
+            <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-2 flex items-center">
+              <i className="fas fa-tag text-ersa-blue mr-2"></i>
               {t('subject')} *
             </label>
             <input
@@ -227,13 +359,18 @@ export function ComplaintForm() {
               value={formData.subject}
               onChange={handleInputChange}
               required
-              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-ersa-blue focus:border-ersa-blue"
+              className="w-full px-4 py-3 pl-12 border border-gray-300 rounded-lg focus:ring-2 focus:ring-ersa-blue focus:border-ersa-blue transition-all duration-200 hover:border-gray-400"
+              placeholder="Başvurunuzun konusunu kısaca belirtin"
             />
+            <div className="absolute left-4 top-11 text-gray-400">
+              <i className="fas fa-tag"></i>
+            </div>
           </div>
 
           {/* Message */}
-          <div className="mb-8">
-            <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
+          <div className="mb-8 relative">
+            <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2 flex items-center">
+              <i className="fas fa-pen text-ersa-blue mr-2"></i>
               {t('message')} *
             </label>
             <textarea
@@ -244,23 +381,56 @@ export function ComplaintForm() {
               required
               rows={6}
               placeholder={t('messagePlaceholder')}
-              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-ersa-blue focus:border-ersa-blue resize-vertical"
+              className="w-full px-4 py-3 pt-12 border border-gray-300 rounded-lg focus:ring-2 focus:ring-ersa-blue focus:border-ersa-blue resize-vertical transition-all duration-200 hover:border-gray-400"
             />
+            <div className="absolute left-4 top-11 text-gray-400">
+              <i className="fas fa-pen"></i>
+            </div>
+            <div className="text-xs text-gray-500 mt-2 flex items-center">
+              <i className="fas fa-info-circle mr-1"></i>
+              Minimum 20 karakter gereklidir. Mevcut: <span className="ml-1 font-medium">{formData.message.length}</span>
+            </div>
+          </div>
+
+          {/* Privacy Notice */}
+          <div className="mb-8 p-4 bg-blue-50 border border-blue-200 rounded-lg">
+            <div className="flex items-start">
+              <i className="fas fa-shield-alt text-blue-600 mt-0.5 mr-3"></i>
+              <div>
+                <h4 className="font-medium text-blue-900 mb-1">Gizlilik Bildirimi</h4>
+                <p className="text-sm text-blue-700">
+                  Formda paylaştığınız kişisel bilgiler sadece başvurunuzu değerlendirmek için kullanılacak ve üçüncü taraflarla paylaşılmayacaktır.
+                </p>
+              </div>
+            </div>
           </div>
 
           {/* Submit Button */}
-          <div className="flex justify-center space-x-4">
+          <div className="flex flex-col space-y-4">
             <button
               type="submit"
-              disabled={isSubmitting}
-              className="bg-ersa-blue text-white px-8 py-3 rounded-lg hover:bg-ersa-light-blue transition-colors disabled:opacity-50 disabled:cursor-not-allowed flex items-center space-x-2"
+              disabled={isSubmitting || formData.message.length < 20}
+              className="w-full bg-gradient-to-r from-ersa-blue to-ersa-light-blue text-white px-8 py-4 rounded-lg hover:from-ersa-light-blue hover:to-ersa-blue transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center space-x-3 text-lg font-medium shadow-lg hover:shadow-xl transform hover:scale-105"
             >
-              {isSubmitting && <i className="fas fa-spinner fa-spin"></i>}
-              <span>{isSubmitting ? t('submitting') : t('submitForm')}</span>
+              {isSubmitting ? (
+                <>
+                  <i className="fas fa-spinner fa-spin"></i>
+                  <span>{t('submitting')}</span>
+                </>
+              ) : (
+                <>
+                  <i className="fas fa-paper-plane"></i>
+                  <span>{t('submitForm')}</span>
+                </>
+              )}
             </button>
-            <Link href="/" className="bg-gray-500 text-white px-8 py-3 rounded-lg hover:bg-gray-600 transition-colors">
-              Ana Sayfaya Dön
-            </Link>
+            
+            <div className="text-center">
+              <Link href="/" className="inline-flex items-center text-gray-600 hover:text-gray-800 transition-colors">
+                <i className="fas fa-arrow-left mr-2"></i>
+                Ana Sayfaya Dön
+              </Link>
+            </div>
           </div>
         </form>
       </div>
