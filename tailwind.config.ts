@@ -55,6 +55,12 @@ export default {
           "4": "var(--chart-4)",
           "5": "var(--chart-5)",
         },
+        // ERSA Brand Colors
+        'ersa-blue': "var(--ersa-blue)",
+        'ersa-light-blue': "var(--ersa-light-blue)", 
+        'ersa-dark-blue': "var(--ersa-dark-blue)",
+        'ersa-green': "var(--ersa-green)",
+        'ersa-amber': "var(--ersa-amber)",
         sidebar: {
           DEFAULT: "var(--sidebar-background)",
           foreground: "var(--sidebar-foreground)",

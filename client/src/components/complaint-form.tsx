@@ -116,7 +116,7 @@ export function ComplaintForm() {
           <div className="space-y-4">
             <button
               onClick={() => setIsSubmitted(false)}
-              className="w-full bg-gradient-to-r from-ersa-blue to-ersa-light-blue text-white px-8 py-3 rounded-lg hover:from-ersa-light-blue hover:to-ersa-blue transition-all duration-300 font-medium transform hover:scale-105"
+              className="w-full bg-gradient-to-r from-ersa-blue to-ersa-light-blue text-white px-8 py-3 rounded-lg hover:from-ersa-light-blue hover:to-ersa-blue transition-all duration-300 font-medium transform hover:scale-105 shadow-lg hover:shadow-xl"
             >
               <i className="fas fa-plus mr-2"></i>
               {t('submitAnother')}
