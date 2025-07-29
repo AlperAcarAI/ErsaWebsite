@@ -7,6 +7,7 @@ export const translations = {
     values: "Değerler",
     contact: "İletişim",
     digitalCatalog: "Dijital Katalog",
+    complaintForm: "Şikayet Formu",
     
     // Hero Section
     heroTitle: "ERSA",
@@ -72,6 +73,27 @@ export const translations = {
     sendMessage: "Mesaj Gönder",
     selectSubject: "Konu seçiniz",
     
+    // Complaint Form
+    complaintFormTitle: "Şikayet ve Başvuru Formu",
+    complaintFormDescription: "Görüş, öneri ve şikayetlerinizi bize ulaştırın. En kısa sürede geri dönüş yapacağız.",
+    formType: "Form Türü",
+    selectFormType: "Form türünü seçiniz",
+    complaint: "Şikayet",
+    application: "Başvuru",
+    suggestion: "Öneri",
+    other: "Diğer",
+    company: "Şirket",
+    priority: "Öncelik",
+    normalPriority: "Normal",
+    highPriority: "Yüksek",
+    urgentPriority: "Acil",
+    messagePlaceholder: "Lütfen mesajınızı detaylı bir şekilde yazınız...",
+    submitForm: "Formu Gönder",
+    submitting: "Gönderiliyor...",
+    formSubmittedTitle: "Form Başarıyla Gönderildi",
+    formSubmittedMessage: "Başvurunuz alınmıştır. En kısa sürede size geri dönüş yapacağız.",
+    submitAnother: "Yeni Form Gönder",
+    
     // Footer
     quickLinks: "Hızlı Bağlantılar",
     copyright: "© 2024 ERSA. Tüm hakları saklıdır.",
@@ -128,6 +150,7 @@ export const translations = {
     values: "Values",
     contact: "Contact",
     digitalCatalog: "Digital Catalog",
+    complaintForm: "Complaint Form",
     
     // Hero Section
     heroTitle: "ERSA",
@@ -193,6 +216,27 @@ export const translations = {
     sendMessage: "Send Message",
     selectSubject: "Select a subject",
     
+    // Complaint Form
+    complaintFormTitle: "Complaint and Application Form",
+    complaintFormDescription: "Send us your opinions, suggestions and complaints. We will get back to you as soon as possible.",
+    formType: "Form Type",
+    selectFormType: "Select form type",
+    complaint: "Complaint",
+    application: "Application",
+    suggestion: "Suggestion",
+    other: "Other",
+    company: "Company",
+    priority: "Priority",
+    normalPriority: "Normal",
+    highPriority: "High",
+    urgentPriority: "Urgent",
+    messagePlaceholder: "Please write your message in detail...",
+    submitForm: "Submit Form",
+    submitting: "Submitting...",
+    formSubmittedTitle: "Form Successfully Submitted",
+    formSubmittedMessage: "Your application has been received. We will get back to you as soon as possible.",
+    submitAnother: "Submit New Form",
+    
     // Footer
     quickLinks: "Quick Links",
     copyright: "© 2024 ERSA. All rights reserved.",
@@ -249,6 +293,7 @@ export const translations = {
     values: "القيم",
     contact: "التواصل",
     digitalCatalog: "الكتالوج الرقمي",
+    complaintForm: "نموذج الشكاوى",
     
     // Hero Section
     heroTitle: "إرسا",
@@ -313,6 +358,27 @@ export const translations = {
     message: "الرسالة",
     sendMessage: "أرسل الرسالة",
     selectSubject: "اختر موضوع",
+    
+    // Complaint Form
+    complaintFormTitle: "نموذج الشكاوى والطلبات",
+    complaintFormDescription: "أرسل لنا آراءك واقتراحاتك وشكاويك. سنعود إليك في أقرب وقت ممكن.",
+    formType: "نوع النموذج",
+    selectFormType: "اختر نوع النموذج",
+    complaint: "شكوى",
+    application: "طلب",
+    suggestion: "اقتراح",
+    other: "أخرى",
+    company: "الشركة",
+    priority: "الأولوية",
+    normalPriority: "عادي",
+    highPriority: "عالي",
+    urgentPriority: "عاجل",
+    messagePlaceholder: "يرجى كتابة رسالتك بالتفصيل...",
+    submitForm: "إرسال النموذج",
+    submitting: "جاري الإرسال...",
+    formSubmittedTitle: "تم إرسال النموذج بنجاح",
+    formSubmittedMessage: "تم استلام طلبك. سنعود إليك في أقرب وقت ممكن.",
+    submitAnother: "إرسال نموذج جديد",
     
     // Footer
     quickLinks: "روابط سريعة",

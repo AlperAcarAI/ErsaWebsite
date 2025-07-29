@@ -5,12 +5,14 @@ import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { LanguageProvider } from "./hooks/use-language";
 import Home from "./pages/home";
+import { ComplaintFormPage } from "./pages/complaint-form-page";
 import NotFound from "@/pages/not-found";
 
 function Router() {
   return (
     <Switch>
       <Route path="/" component={Home} />
+      <Route path="/sikayet-formu" component={ComplaintFormPage} />
       <Route component={NotFound} />
     </Switch>
   );

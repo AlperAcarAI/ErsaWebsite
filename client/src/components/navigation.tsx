@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Link } from "wouter";
 import { useLanguage } from "../hooks/use-language";
 import ErsaLogo from "../Ersa-logo.svg";
 
@@ -102,6 +103,9 @@ export function Navigation() {
               >
                 {t("contact")}
               </button>
+              <Link href="/sikayet-formu" className="nav-item text-gray-700 hover:text-ersa-blue px-3 py-2 text-sm font-medium transition-colors">
+                {t("complaintForm")}
+              </Link>
               <a
                 href="/ErsaUlasim-Katalog.pdf"
                 target="_blank"
@@ -222,6 +226,13 @@ export function Navigation() {
             >
               {t("contact")}
             </button>
+            <Link 
+              href="/sikayet-formu" 
+              onClick={() => setIsMobileMenuOpen(false)}
+              className="block w-full text-left px-3 py-2 text-base font-medium text-gray-700 hover:text-ersa-blue hover:bg-gray-50 rounded-md"
+            >
+              {t("complaintForm")}
+            </Link>
             <a
               href="/ErsaUlasim-Katalog.pdf"
               target="_blank"
